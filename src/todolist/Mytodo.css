@@ -1,0 +1,233 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background: linear-gradient(190deg, #867bcd 0%, #6a5aab 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #222;
+  }
+  .mytodos h1 {
+    text-align: center;
+  }
+  
+  .wrapper {
+    width: fit-content;
+    margin: auto;
+  
+    max-width: 1300px;
+  }
+  .todo-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    margin: 20px;
+    color: #e1ebfd;
+  }
+  .todo-input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+  .todo-input-item input {
+    background-color: #e1ebfd;
+    box-shadow: 2px 4px 10px #e1ebfd;
+    border-radius: 10px;
+    border: none;
+  }
+  .primaryBtn {
+    margin-top: 30px;
+    background-color: #271c6c;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #e1ebfd;
+  }
+  
+  .addbtn {
+    border-radius: 50%;
+    background-color: #271c6c;
+    color: white;
+    width: 50px;
+    font-size: 30px;
+    box-shadow: 2px 4px 10px #271c6c;
+  }
+  .todo-input-item label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .todo-input-item input {
+    padding: 8px;
+    width: 350px;
+    
+    
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 10px;
+  }
+  .secondaryBtn {
+    font-size: 20px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    background-color: #e1ebfd;
+  }
+  .active {
+    background-color: #271c6c;
+    color: #e1ebfd;
+  }
+  .todoBtn {
+    border-radius: 10px 0px 0px 10px;
+  }
+  .completeBtn {
+    border-radius: 0px 10px 10px 0px;
+  }
+  .todolistItem {
+    overflow: hidden;
+  
+    word-wrap: break-word;
+  }
+  .todoListArea {
+    margin: 23.5px;
+  
+    padding: 3px 20px;
+    display: flex;
+  
+    width: 200px;
+    height: 170px;
+    border-radius: 20px;
+    position: relative;
+    background: radial-gradient(
+      circle,
+      hsla(237, 34%, 78%, 0.9) 0%,
+      hsla(219, 88%, 94%, 0.9) 100%
+    );
+    box-shadow: 2px 4px 10px #e1ebfd;
+  }
+  .cards {
+    display: flex;
+    overflow: hidden;
+    align-self: flex-start;
+    flex-wrap: wrap;
+  
+    max-width: 1150px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .todoListArea h3 {
+    color: #271c6c;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .todoListArea p {
+    font-size: 14px;
+  }
+  .iconBtn {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    gap: 10px;
+  }
+  .iconBtn :hover {
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 25px;
+  
+    color: red;
+  }
+  .deleteicon {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: red;
+    cursor: pointer;
+  }
+  .deleteicon :hover {
+    color: rgb(136, 18, 18);
+  }
+  
+  .checkIcon {
+    font-size: 25px;
+    color: blue;
+  }
+  .editIcon {
+    font-size: 25px;
+    color: green;
+  }
+  
+  .edittodos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  }
+  .edittodos input {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e1ebfd;
+    box-shadow: 2px 4px 10px #e1ebfd;
+    border: none;
+    border-radius: 10px;
+  }
+  .edittodos button {
+    width: fit-content;
+    margin: auto;
+  }
+  .todolistItem p small {
+    bottom: 1.3rem;
+    left: 1rem;
+    position: absolute;
+  }
+  
+  @media (max-width: 768px) {
+    .todo-input {
+      flex-direction: column;
+  
+      gap: 15px;
+    }
+  
+    .todo-input-item input {
+      width: 350px;
+    }
+    .cards {
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+  
+      justify-content: center;
+      align-items: center;
+  
+      max-width: 1150px;
+      margin: auto;
+      overflow: hidden;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .todo-input-item input {
+      padding: 8px;
+      width: 300px;
+      
+      
+    }
+  }
+  
